@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="movieApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="/css/style.css" media="screen" charset="utf-8">
+    <base href="/">
+  </head>
+  <body>
+
+   <div class="homeContainer">
+     <h1> Angular OMDb API Search </h1>
+     <form ng-model="searchMovie" name="searchMovie" class="searchBox">
+       <label for="movieSearch">Enter a movie by title</label>
+       <input type="text" name="movieSearch" ng-model="home.movie" placeholder="movie title e.g. 'Back to the Future'"/>
+       <button type="submit" ui-sref="search({ id: home.movie })">Search</button>
+     </form>
+
+    </div>
+
+    <div class="view" ui-view></div>
+
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="/js/app.js"></script>
+    <script type="text/javascript" src="/js/controllers.js"></script>
+    <script type="text/javascript" src="/js/directives.js"></script>
+    <script type="text/javascript" src="/js/filters.js"></script>
+    <script type="text/javascript" src="/js/services.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!-- <div class="homeContainer">
+<h1> Angular OMDb API Search </h1>
+<form ng-model="searchMovie" name="searchMovie" class="searchBox" ng-submit="home.searchMovie()">
+  <label for="movieSearch">Enter a movie by title</label>
+  <input type="text" name="movieSearch" ng-model="home.movie" placeholder="movie title e.g. 'Back to the Future'"/>
+  <button type="submit">Search</button>
+</form>
+ </div> -->
+
+<div class="movieResults" >
+  <div class="listItem" ng-repeat="data in home.movieResults">
+    <a ng-href="/show/{{ data.imdbID }}" ng-click="home.transferId(data.imdbID)">
+      <ul class="movie">
+        <li> {{ data.Title }} </li>
+        <li> {{ data.Year }} </li>
+      </ul>
+    </a>
+</div>
+</div>

@@ -1,0 +1,32 @@
+
+<div class="movieInfo" >
+  <div ng-repeat="data in show.movie">
+    <ul>
+  <li><img ng-src="{{data.Poster}}" />
+  <li>{{ data.Title }}</li>
+  <li>{{ data.Actors }}</li>
+  <li>{{ data.Plot }}</li>
+</ul>
+</div>
+<div ng-repeat="moreData in show.movie">
+  <ul>
+  <li>{{ moreData.Title }}</li>
+  <li>{{ moreData.Country }}</li>
+  <li>{{ moreData.Director }}</li>
+  <li>{{ moreData.Genre }}</li>
+  <li>{{ moreData.Language }}</li>
+  <li>{{ moreData.Metascore }}</li>
+  <li>{{ moreData.Rated }}</li>
+  <li>{{ moreData.Released }}</li>
+  <li>{{ moreData.Runtime }}</li>
+  <li>{{ moreData.Title }}</li>
+  <li>{{ moreData.Writer }}</li>
+  <li>{{ moreData.Year }}</li>
+  <li>{{ moreData.imdbRating }}</li>
+  <li>{{ moreData.imdbVotes }}</li>
+</ul>
+</div>
+</div>
+<div class="movieInfo2">
+
+</div>
