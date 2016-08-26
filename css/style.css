@@ -41,8 +41,8 @@ input, label {
   flex-wrap: wrap;
 }
 
-.movieResults {
 
+.movieResults {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -50,6 +50,10 @@ input, label {
   flex-wrap: wrap;
   width: 60vw;
   height: auto;
+}
+
+.movieResults a {
+  text-decoration: none;
 }
 
 .movieInfo {
@@ -65,4 +69,8 @@ input, label {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.IndMovie li {
+  list-style: none;
 }
